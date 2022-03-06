@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-migrations",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Initialize or update your data easly with a version controller.",
   "strapi": {
     "name": "migrations",
