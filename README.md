@@ -3,7 +3,7 @@
 <h1>Strapi plugin migrations</h1>
 </div>
 
-### ⚠️ The current version of this plugin is working for Strapi v4.
+### ⚠️ The current version of this plugin is working for Strapi v4. For Strapi V3 use "0.0.8" version
 
 If you want to initialize or update automatically your data in Strapi for all of your environments, this plugin is made for you.
 
