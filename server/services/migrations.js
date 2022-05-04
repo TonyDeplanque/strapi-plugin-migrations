@@ -41,11 +41,11 @@ module.exports = ({ strapi }) => ({
     if (!files || files.length === 0) {
       strapi.log.info('No files found. Migration skipped.')
     } else {
-      for (const file of files) {
-        if (process.platform === 'win32' || process.platform === 'win64') {
+      if (process.platform === 'win32' || process.platform === 'win64') {
           dir = 'file:///' + dir.replace(/\\/g, "/");
-        }
+      }
 
+      for (const file of files) {
         strapi.log.info(`File: ${file} in progress...`)
         try {
           const filePath = path.join(dir, file);
