@@ -84,7 +84,8 @@ module.exports = ({ strapi }) => ({
 
   getVersionFromFile(filename) {
     const regex = this.getFileRegex()
-    return filename.match(regex)[1] ? Number(filename.match(regex)[1]) : 0
+    const matches = filename.match(regex);
+    return matches && matches[1] ? Number(filename.match(regex)[1]) : 0
   },
 
   checkIfTheFileNameIsAutorized(file) {
